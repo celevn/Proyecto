@@ -1,0 +1,418 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E1DBD6;
+}
+
+/*fuentes*/
+.kalam-regular { /*fuente para textos*/
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.kalam-bold { /*fuentes para titulos*/
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+}
+
+/*header*/
+header {
+  display: flex;
+  align-items: center;
+}
+header .nav-general {
+  background-color: rgb(43, 43, 43);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+header .nav-general div .logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header .nav-general div div ul li .color-nav {
+  color: #bbbbbb;
+}
+header .nav-general div div ul li .color-nav:hover {
+  color: #ffffff;
+}
+
+/*main*/
+main h1 {
+  margin-top: 70px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+main div img {
+  border-radius: 8px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+main .contenedor-uno {
+  align-content: center;
+  margin: 20px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(3, 660px);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+main .contenedor-uno .card {
+  background-color: rgb(43, 43, 43);
+  position: initial;
+  display: flex;
+}
+main .contenedor-uno .card .card-img {
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+main .contenedor-uno .card .card-img img {
+  width: 100%;
+  display: block;
+}
+main .contenedor-uno .card .card-body {
+  text-align: justify;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+main .contenedor-uno .card .card-body h2 {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+main .contenedor-uno .card .card-body p {
+  flex-grow: 1;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: whitesmoke;
+}
+main .contenedor-uno .card .card-body button {
+  border: 0;
+  background-image: linear-gradient(150deg, #E1DBD6, #d9cbc0, #E1DBD6);
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contenedor-uno .card .card-body button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+  width: 100%;
+}
+main .contenedor-uno .card .card-body button:hover span {
+  background: none;
+}
+
+/*boton*/
+section .lista-botton {
+  list-style: none;
+}
+section .lista-botton .contenedor-botton {
+  font-size: 30px;
+  text-align: center;
+}
+section .lista-botton .contenedor-botton .botton-item {
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+section .lista-botton .contenedor-botton .botton-item .boton-ver-mas {
+  text-decoration: none;
+  color: #bbbbbb;
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+}
+section .lista-botton .contenedor-botton .botton-item .boton-ver-mas:hover {
+  color: #ffffff;
+}
+
+/*footer*/
+footer {
+  background-color: rgb(43, 43, 43);
+  padding: 20px 0; /*sirve para hacer mas alto el footer*/
+}
+footer .container {
+  max-width: 100%;
+  margin: 0 auto; /*esto es para que no se salga de los 1200px*/
+}
+footer .container .footer-row {
+  display: flex; /*es para que se pongan uno al lado del otro*/
+  flex-wrap: wrap; /*es para que cuando se minimice la ventana vaya bajando y no se pongan en linea*/
+}
+footer .container .footer-row .footer-links {
+  width: 25%; /*sirve para definirle un tamaño*/
+  padding: 0 15px; /*sirve para dejar espacio entre arriba y abajo y izquierda y derecha*/
+}
+footer .container .footer-row .footer-links .titulo-footer {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px; /*es una separacion hacia abajo de 25px*/
+  font-weight: 500; /*sirve para que no se vea tan gruesa nuestra letra*/
+  border-bottom: 2px solid #E1DBD6; /*sirve para ponerle una linea debajo*/
+  padding-bottom: 10px; /*sirve para separar la linea que agregamos anteriormente de */
+  display: inline-block; /*sirve para que la linea solo ocupe el ancho de mi letra*/
+}
+footer .container .footer-row .footer-links .lista-footer {
+  list-style: none;
+  padding: 0;
+}
+footer .container .footer-row .footer-links ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: 0.3s ease; /*agrega una animacion y una transicion*/
+}
+footer .container .footer-row .footer-links ul li a:hover {
+  color: #ffffff; /*sirve para que cuando pongas el maus arriba se ponga de otro color*/
+  padding: 6px; /*sirve para que cuando pongas el maus arriba se desplaze*/
+}
+
+/*productos*/
+main .titulo-productos {
+  margin-top: 70px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+main .contenedor-dos {
+  align-content: center;
+  margin: 0px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 660px);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+main .contenedor-dos .card {
+  position: initial;
+  background-color: rgb(43, 43, 43);
+  display: flex;
+}
+main .contenedor-dos .card .card-img {
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+main .contenedor-dos .card .card-img img {
+  width: 100%;
+  display: block;
+}
+main .contenedor-dos .card .card-body {
+  text-align: justify;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+main .contenedor-dos .card .card-body h2 {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3em;
+  color: whitesmoke;
+}
+main .contenedor-dos .card .card-body p {
+  flex-grow: 1;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: whitesmoke;
+}
+main .contenedor-dos .card .card-body button {
+  border: 0;
+  background-image: linear-gradient(150deg, #E1DBD6, #d9cbc0, #E1DBD6);
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .contenedor-dos .card .card-body button span {
+  background-color: #111;
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+  width: 100%;
+}
+main .contenedor-dos .card .card-body button:hover span {
+  background: none;
+}
+
+/*nosotros*/
+.main-nosotros {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  margin-left: 1%;
+}
+.main-nosotros .titulo-nosotros {
+  margin-left: 20px;
+}
+.main-nosotros div {
+  display: grid;
+  place-items: center;
+}
+.main-nosotros div p {
+  text-align: center;
+}
+.main-nosotros div .mapa {
+  width: 350px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-nosotros .div-nosotros .img-vivero {
+  width: 350px;
+  height: 300px;
+}
+
+/*contactos*/
+.main-contactos {
+  margin-left: 1%;
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.main-contactos .titulo-contactos {
+  margin-left: 20px;
+}
+.main-contactos .div-container-contactos {
+  display: flex;
+}
+.main-contactos .div-container-contactos .div-formulario {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 600px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-contactos .div-container-contactos .div-formulario form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 500px;
+}
+.main-contactos .div-container-contactos .div-formulario form .sub-titulo {
+  color: #E1DBD6;
+  font-size: 35px;
+}
+.main-contactos .div-container-contactos .div-formulario form .input-group {
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.main-contactos .div-container-contactos .div-formulario form .input-group label {
+  color: #E1DBD6;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main-contactos .div-container-contactos .div-formulario form .input-group input, .main-contactos .div-container-contactos .div-formulario form .input-group textarea {
+  padding: 17px 25px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 2px solid #E1DBD6;
+  color: #E1DBD6;
+  outline: none;
+}
+.main-contactos .div-container-contactos .div-formulario form .input-group input::placeholder, .main-contactos .div-container-contactos .div-formulario form .input-group textarea::placeholder {
+  color: #a5a4a4;
+}
+.main-contactos .div-container-contactos .div-formulario form .input-group .btn {
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  background-color: rgb(43, 43, 43);
+  box-shadow: 0 0 20px rgb(43, 43, 43);
+  cursor: pointer;
+}
+.main-contactos .div-container-contactos .div-formulario form .input-group .btn:hover {
+  background-color: rgb(0, 0, 0);
+}
+.main-contactos .div-container-contactos .div-uno-contactos {
+  background-color: #ffffff;
+  display: flex;
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  background-color: #E1DBD6;
+}
+.main-contactos .div-container-contactos .div-uno-contactos .div-redes { /*redes sociales*/
+  width: 300px;
+}
+.main-contactos .div-container-contactos .div-uno-contactos .div-redes .lista-contactos {
+  list-style: none;
+}
+.main-contactos .div-container-contactos .div-uno-contactos .div-redes .lista-contactos li .link-contacto {
+  text-decoration: none;
+  color: black;
+}
+.main-contactos .div-container-contactos .div-uno-contactos .div-redes .lista-contactos li .link-contacto .bi-twitter-x {
+  color: black;
+}
+.main-contactos .div-container-contactos .div-uno-contactos .div-redes .lista-contactos li .bi {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/*mq*/
+/*desktop*/
+@media only screen and (min-width: 961px) {
+  main .contenedor-uno {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 660px);
+  }
+  main .contenedor-uno .foto-index-inicio {
+    display: block;
+    grid-row: span 1;
+    grid-column: span 4;
+    width: 100%;
+    height: 100%;
+  }
+  .main-contactos .div-container-contactos {
+    display: flex;
+  }
+  .footer-dos {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+}
+
+
